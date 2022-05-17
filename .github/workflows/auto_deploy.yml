@@ -32,9 +32,6 @@ jobs:
         uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install 
-          
-      - name: Fixing Node Sass
-        run: yarn rebuild node-sass
 
       - name: Creating build
         run: sudo yarn build
