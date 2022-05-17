@@ -34,8 +34,8 @@ jobs:
           cmd: install 
           
       - name: Fixing Node Sass
-        run: npm rebuild node-sass
-        
+        run: yarn rebuild node-sass
+
       - name: Creating build
         run: sudo yarn build
         
