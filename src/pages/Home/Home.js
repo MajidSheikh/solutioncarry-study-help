@@ -1,6 +1,5 @@
 import React from 'react';
 import SolutionCatogaries from './SolutionCatogaries';
-import JobList from './JobList/jobList';
 import SolutionsList from './SolutionsList/SolutionsList';
 import HowItWorks from './HowItWorks';
 import Cta from './Cta';

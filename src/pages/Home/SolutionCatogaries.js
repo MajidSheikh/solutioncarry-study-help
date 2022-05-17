@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Row, Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
-import Badge from 'react-bootstrap/Badge'
 
 const SolutionCatogaries = () => {
     const categories = [

@@ -3,7 +3,6 @@ import React, { Suspense } from "react";
 //Importing Section
 // const TopBar = import("../CommonLayout/TopBar");
 import TopBar from "../CommonLayout/TopBar";
-import NavBar from "../CommonLayout/NavBar";
 import Subscribe from "../CommonLayout/Subscribe";
 import Footer from "../CommonLayout/Footer";
 import StyleSwitcher from "../CommonLayout/StyleSwitcher";

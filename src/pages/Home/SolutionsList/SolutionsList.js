@@ -1,29 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Container,
   Row,
   Col,
-  Nav,
-  NavItem,
-  NavLink,
-  TabContent,
-  TabPane,
 } from "reactstrap";
-import classnames from "classnames";
 
 //Components Imports
-import FeaturedJobs from "../JobList/FeaturedJobs";
-import Freelancer from "../JobList/Freelancer.js";
-import Fulltime from "../JobList/Fulltime.js";
-import Parttime from "../JobList/Parttime.js";
 import RecentJobs from "./RecentSolutions";
 
 const SolutionList = () => {
-  const [activeTab, setActiveTab] = useState("1");
 
-  const tabChange = (tab) => {
-    if (activeTab !== tab) setActiveTab(tab);
-  };
   return (
     <React.Fragment>
       <div className="section bg-light">
