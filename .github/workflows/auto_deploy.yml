@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v3.2.0
 
       - name: Creating build
-        run: npm run build
+        run: npm build
         
       - name: Installing surge
         run: npm install --global surge
