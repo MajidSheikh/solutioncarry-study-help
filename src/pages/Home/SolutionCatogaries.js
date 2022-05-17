@@ -2,56 +2,57 @@ import React from "react";
 import { Col, Row, Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
+import Badge from 'react-bootstrap/Badge'
 
-const Jobcatogaries = () => {
+const SolutionCatogaries = () => {
     const categories = [
         {
             id: 1,
             icon: "uim-layers-alt",
             name: "IT & Software",
-            job: 2024
+            solutions: 2024
         },
         {
             id: 2,
             icon: "uim-airplay",
             name: "Technology",
-            job: 1250
+            solutions: 1250
         },
         {
             id: 3,
             icon: "uim-bag",
             name: "Government",
-            job: 802
+            solutions: 802
         },
         {
             id: 4,
             icon: "uim-user-md",
             name: "Accounting / Finance",
-            job: 577
+            solutions: 577
         },
         {
             id: 5,
             icon: "uim-hospital",
             name: "Construction / Facilities",
-            job: 285
+            solutions: 285
         },
         {
             id: 6,
             icon: "uim-telegram-alt",
             name: "Tele-communications",
-            job: 495
+            solutions: 495
         },
         {
             id: 7,
             icon: "uim-scenery",
             name: "Design & Multimedia",
-            job: 1045
+            solutions: 1045
         },
         {
             id: 8,
             icon: "uim-android-alt",
             name: "Human Resource",
-            job: 1516
+            solutions: 1516
         },
 
     ];
@@ -60,11 +61,10 @@ const Jobcatogaries = () => {
             <section className="section">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col lg={6}>
+                        <Col lg={8}>
                             <div className="section-title text-center">
-                                <h3 className="title">Browser Jobs Categories </h3>
-                                <p className="text-muted">Post a job to tell us about your project. We'll quickly match you with the
-                                    right freelancers.</p>
+                                <h3 className="title">Best Study Resources for Your Homework</h3>
+                                <p className="text-muted">Whatever the homework problem, we have a solution.</p>
                             </div>
                         </Col>
                     </Row>
@@ -80,7 +80,7 @@ const Jobcatogaries = () => {
                                         <Link to="#" className="text-dark stretched-link">
                                             <h5 className="fs-18">{item.name}</h5>
                                         </Link>
-                                        <p className="text-muted mb-0">{item.job} Jobs</p>
+                                        <p className=" mb-0 badge bg-primary">{item.solutions}</p>
                                     </div>
                                 </div>
                             </Col>
@@ -102,4 +102,4 @@ const Jobcatogaries = () => {
     );
 };
 
-export default Jobcatogaries;
+export default SolutionCatogaries;

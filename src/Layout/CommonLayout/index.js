@@ -15,7 +15,7 @@ const Layout = (props) => {
             <Suspense>
                 <div>
                     <TopBar />
-                    <NavBar />
+                    {/* <NavBar /> */}
                     <div className="main-content">
                         <div className="page-content">{props.children}</div>
                     </div>

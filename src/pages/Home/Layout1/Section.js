@@ -2,8 +2,6 @@ import React from 'react';
 import { Col, Container, Row, Form } from "reactstrap";
 import { Link } from "react-router-dom";
 import JobSearch from "../SubSection/JobSearch";
-import CountryOptions from '../SubSection/CountryOptions';
-import JobType from '../SubSection/JobType';
 
 const section = () => {
     return (
@@ -14,41 +12,25 @@ const section = () => {
                     <Row className="justify-content-center">
                         <Col lg={8}>
                             <div className="text-center text-white mb-5">
-                                <h1 className="display-5 fw-semibold mb-3">Search Between More Then <span className="text-warning fw-bold">10,000+ </span>
-                                    Open Jobs.</h1>
-                                <p className="fs-17">Find jobs, create trackable resumes and enrich your applications.</p>
+                                <h1 className="display-5 fw-semibold mb-3"> <span className="text-warning fw-bold">10,000+ </span>
+                                    Textbook Solutions, Expert Q&A, and Tutors.</h1>
+                                <p className="fs-17">Get access to biggest collection of online study documents and solved homework questions shared by fellow students.</p>
                             </div>
                         </Col>
                     </Row>
 
                     <Form action="#">
                         <div className="registration-form">
-                            <Row className="g-0">
-                                <Col lg={3}>
+                            <Row className="g-0 justify-content-md-center">
+                                <Col lg={8}>
                                     <div className="filter-search-form filter-border mt-3 mt-lg-0">
                                         <i className="uil uil-briefcase-alt"></i>
                                         <JobSearch />
                                     </div>
                                 </Col>
                                 <Col lg={3}>
-                                    <div className="filter-search-form filter-border mt-3 mt-lg-0">
-                                        <i className="uil uil-map-marker"></i>
-                                        <select className="form-select selectForm__inner" data-trigger name="choices-single-location" id="choices-single-location" aria-label="Default select example">
-                                            <CountryOptions />
-                                        </select>
-                                    </div>
-                                </Col>
-                                <Col lg={3}>
-                                    <div className="filter-search-form mt-3 mt-lg-0">
-                                        <i className="uil uil-clipboard-notes"></i>
-                                        <select className="form-select selectForm__inner" data-trigger name="choices-single-categories" id="choices-single-categories" aria-label="Default select example">
-                                            <JobType />
-                                        </select>
-                                    </div>
-                                </Col>
-                                <Col lg={3}>
                                     <div className="mt-3 mt-lg-0 h-100">
-                                        <button className="btn btn-primary submit-btn w-100 h-100" type="submit"><i className="uil uil-search me-1"></i> Find Job</button>
+                                        <button className="btn btn-primary submit-btn w-100 h-100" type="submit"><i className="uil uil-search me-1"></i> Search</button>
                                     </div>
                                 </Col>
                             </Row>
