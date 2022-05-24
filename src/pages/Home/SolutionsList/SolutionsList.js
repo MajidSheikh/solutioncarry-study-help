@@ -6,7 +6,7 @@ import {
 } from "reactstrap";
 
 //Components Imports
-import RecentJobs from "./RecentSolutions";
+import RecentSolutions from "./RecentSolutions";
 
 const SolutionList = () => {
 
@@ -27,7 +27,7 @@ const SolutionList = () => {
 
           <Row>
             <Col lg={12}>
-              <RecentJobs />
+              <RecentSolutions />
             </Col>
           </Row>
         </Container>

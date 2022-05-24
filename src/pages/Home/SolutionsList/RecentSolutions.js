@@ -8,7 +8,7 @@ import jobImage2 from "../../../assets/images/featured-job/img-02.png";
 import jobImage3 from "../../../assets/images/featured-job/img-03.png";
 import jobImage4 from "../../../assets/images/featured-job/img-04.png";
 
-const RecentJobs = () => {
+const RecentSolutions = () => {
   //Apply Now Model
   const [modal, setModal] = useState(false);
   const openModal = () => setModal(!modal);
@@ -17,23 +17,9 @@ const RecentJobs = () => {
     {
       id: 1,
       companyImg: jobImage1,
-      jobDescription: "Web Developer",
-      companyName: "Web Technology pvt.Ltd",
-      location: "Oakridge Lane ssRichardson",
-      salary: "1000-1200/m",
-      fullTime: true,
-      timing: "Full Time",
-      catogary: "Recent Jobs",
+      jobDescription: "Covert The Following Program With Switch And Ternary Operator #Include &Lt;Iostream&Gt; Using Namespace Std; Int Main()",
+      salary: "1000",
       addclassNameBookmark: false,
-      badges: [
-        {
-          id: 1,
-          badgeclassName: "bg-soft-info",
-          badgeName: "Private",
-        },
-      ],
-      experience: "1 - 2 years",
-      Notes: "languages only differ in their grammar.",
     },
     {
       id: 2,
@@ -121,38 +107,15 @@ const RecentJobs = () => {
             </Link>
           </div>
           <div className="p-4">
-            <Row className="align-items-center">
-              <Col md={2}>
-                <div className="text-center mb-4 mb-md-0">
-                  <Link to="/company-details">
-                    <img
-                      src={recentJobDetails.companyImg}
-                      alt=""
-                      className="img-fluid rounded-3"
-                    />
-                  </Link>
-                </div>
-              </Col>
+            <Row className="align-items-center p-4">
 
-              <Col md={3}>
-                <div className="mb-2 mb-md-0">
+              <Col md={8}>
+                <div className="mb-4 mb-md-0 mb-md-0">
                   <h5 className="fs-18 mb-1">
                     <Link to="/jobdetails" className="text-dark">
-                      {recentJobDetails.jobDescription}
+                      <strong>Question: </strong>{recentJobDetails.jobDescription}
                     </Link>
                   </h5>
-                  <p className="text-muted fs-14 mb-0">
-                    {recentJobDetails.companyName}
-                  </p>
-                </div>
-              </Col>
-
-              <Col md={3}>
-                <div className="d-flex mb-2">
-                  <div className="flex-shrink-0">
-                    <i className="mdi mdi-map-marker text-primary me-1"></i>
-                  </div>
-                  <p className="text-muted mb-0">{recentJobDetails.location}</p>
                 </div>
               </Col>
 
@@ -165,64 +128,14 @@ const RecentJobs = () => {
                 </div>
               </Col>
 
-              <Col md={2}>
-                <div>
-                  <span
-                    className={
-                      recentJobDetails.fullTime === true
-                        ? "badge bg-soft-success fs-13 mt-1 mx-1"
-                        : recentJobDetails.partTime === true
-                        ? "badge bg-soft-danger fs-13 mt-1 mx-1"
-                        : recentJobDetails.freelancer === true
-                        ? "badge bg-soft-purple fs-13 mt-1 mx-1"
-                        : ""
-                    }
-                  >
-                    {recentJobDetails.timing}
-                  </span>
-
-                  {(recentJobDetails.badges || []).map((badgeInner, key) => (
-                    <span
-                      className={`badge ${badgeInner.badgeclassName} fs-13 mt-1`}
-                      key={key}
-                    >
-                      {badgeInner.badgeName}
-                    </span>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-          </div>
-          <div className="p-3 bg-light">
-            <Row>
-              <Col md={4}>
-                <div>
-                  <p className="text-muted mb-0">
-                    <span className="text-dark">Experience :</span>{" "}
-                    {recentJobDetails.experience}
-                  </p>
-                </div>
-              </Col>
-
-              <Col lg={6} md={5}>
-                {}
-                <div>
-                  <p className="text-muted mb-0">
-                    <span className="text-dark">
-                      {recentJobDetails.Notes === null ? "" : "Notes :"}
-                    </span>
-                    {recentJobDetails.Notes}{" "}
-                  </p>
-                </div>
-              </Col>
-
-              <Col lg={2} md={3}>
+              <Col lg={2} md={2}>
                 <div className="text-start text-md-end">
                   <Link to="#" onClick={openModal} className="primary-link">
-                    Apply Now <i className="mdi mdi-chevron-double-right"></i>
+                    View Answer <i className="mdi mdi-chevron-double-right"></i>
                   </Link>
                 </div>
               </Col>
+
             </Row>
           </div>
         </div>
@@ -267,4 +180,4 @@ const RecentJobs = () => {
   );
 };
 
-export default RecentJobs;
+export default RecentSolutions;
