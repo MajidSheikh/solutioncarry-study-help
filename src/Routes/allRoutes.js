@@ -1,5 +1,10 @@
 import React from "react";
 /** Add Route Component */
+
+// Majid Section
+const SolutionsCategories = React.lazy(() => import("../pages/Categories/SolutionsCategories/SolutionsCategories"));
+const SolutionsSubcategories = React.lazy(() => import("../pages/Categories/SolutionsSubcategories/SolutionsSubcategories"));
+
 //Home Section
 const Layout1 =  React.lazy(() => import("../pages/Home/Layout1/Layout1"));
 const Layout2 =  React.lazy(() => import("../pages/Home/Layout2/Layout2"));
@@ -19,7 +24,6 @@ const JobList2 =  React.lazy(() => import("../pages/Jobs/JobList2/JobList2"));
 const JobGrid =  React.lazy(() => import("../pages/Jobs/JobGrid/JobGrid"));
 const JobGrid2 =  React.lazy(() => import("../pages/Jobs/JobGrid2/JobGrid2"));
 const JobDetails =  React.lazy(() => import("../pages/Jobs/JobDetails/JobDetails"));
-const SolutionsCategories = React.lazy(() => import("../pages/Categories/SolutionsCategories/SolutionsCategories"));
 
 //Candidate and Company Section
 const CandidateList =  React.lazy(() => import("../pages/CandidateAndCompany/CandidateList/CandidateList"));
@@ -56,6 +60,11 @@ const MyProfile =  React.lazy(() => import("../pages/Profile/MyProfile/MyProfile
 
 
 const userRoutes = [
+
+  // Majid Routes
+  { path: "/categories", component: SolutionsCategories },
+  { path: "/subcategories", component: SolutionsSubcategories },
+
 
   //profile Section(User Profile)
   { path: "/bookmarkjobpost", component: BookMarkJobPost },
