@@ -19,7 +19,7 @@ const JobList2 =  React.lazy(() => import("../pages/Jobs/JobList2/JobList2"));
 const JobGrid =  React.lazy(() => import("../pages/Jobs/JobGrid/JobGrid"));
 const JobGrid2 =  React.lazy(() => import("../pages/Jobs/JobGrid2/JobGrid2"));
 const JobDetails =  React.lazy(() => import("../pages/Jobs/JobDetails/JobDetails"));
-const JobsCategories =  React.lazy(() => import("../pages/Jobs/JobsCategories/JobsCategories"));
+const SolutionsCategories = React.lazy(() => import("../pages/Categories/SolutionsCategories/SolutionsCategories"));
 
 //Candidate and Company Section
 const CandidateList =  React.lazy(() => import("../pages/CandidateAndCompany/CandidateList/CandidateList"));
@@ -85,7 +85,7 @@ const userRoutes = [
   { path : "/candidatelist", component: CandidateList },
 
   //Jobs Section
-  { path : "/jobscategories", component: JobsCategories },
+  { path: "/categories", component: SolutionsCategories },
   { path : "/jobdetails", component: JobDetails },
   { path : "/jobgrid2", component: JobGrid2 },
   { path : "/jobgrid", component: JobGrid },
