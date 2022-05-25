@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
 
 const Features = () => {
     const features = [

@@ -4,6 +4,8 @@ import React from "react";
 // Majid Section
 const SolutionsCategories = React.lazy(() => import("../pages/Categories/SolutionsCategories/SolutionsCategories"));
 const SolutionsSubcategories = React.lazy(() => import("../pages/Categories/SolutionsSubcategories/SolutionsSubcategories"));
+const SolutionsList = React.lazy(() => import("../pages/Solutions/SolutionsList/Solutions"));
+const SolutionDetail = React.lazy(() => import("../pages/Solutions/SolutionDetail/JobDetails"));
 
 //Home Section
 const Layout1 =  React.lazy(() => import("../pages/Home/Layout1/Layout1"));
@@ -64,6 +66,8 @@ const userRoutes = [
   // Majid Routes
   { path: "/categories", component: SolutionsCategories },
   { path: "/subcategories", component: SolutionsSubcategories },
+  { path: "/solutions", component: SolutionsList },
+  { path: "/solution", component: SolutionDetail },
 
 
   //profile Section(User Profile)

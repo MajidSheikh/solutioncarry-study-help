@@ -2,8 +2,6 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Col, Input, Row } from 'reactstrap';
-// import CountryOptions from '../../Home/SubSection/CountryOptions';
-// import JobType from '../../Home/SubSection/JobType';
 
 const SolutionFilters = () => {
     return (
